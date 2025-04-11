@@ -1,6 +1,6 @@
 {
   "name": "errortunes",
-  "displayName": "Fun Error Music",
+  "displayName": "Error Tunes",
   "description": "Plays a funny sound when an error appears in the VS Code console or terminal.",
   "version": "0.0.1",
   "engines": {
