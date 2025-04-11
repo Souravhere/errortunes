@@ -23,14 +23,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "funErrorMusic.toggle",
+        "command": "errortunes.toggle",
         "title": "Toggle Fun Error Music"
       }
     ],
     "configuration": {
-      "title": "Fun Error Music",
+      "title": "Error Tunes",
       "properties": {
-        "funErrorMusic.enabled": {
+        "errortunes.enabled": {
           "type": "boolean",
           "default": true,
           "description": "Enable or disable the error music."
@@ -46,10 +46,10 @@
     "@types/vscode": "^1.85.0",
     "esbuild": "^0.20.0"
   },
-  "publisher": "YourPublisherName",
+  "publisher": "Sourav Chhimpa",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/fun-error-music.git"
+    "url": "https://github.com/souravhere/errortunes.git"
   },
   "license": "MIT"
 }
