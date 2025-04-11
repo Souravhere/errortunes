@@ -1,12 +1,55 @@
 {
   "name": "errortunes",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "displayName": "Fun Error Music",
+  "description": "Plays a funny sound when an error appears in the VS Code console or terminal.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "fun",
+    "music",
+    "error",
+    "console",
+    "sound"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "funErrorMusic.toggle",
+        "title": "Toggle Fun Error Music"
+      }
+    ],
+    "configuration": {
+      "title": "Fun Error Music",
+      "properties": {
+        "funErrorMusic.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the error music."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "node ./node_modules/esbuild/install.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.20.0"
+  },
+  "publisher": "YourPublisherName",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/fun-error-music.git"
+  },
+  "license": "MIT"
 }
